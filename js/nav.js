@@ -1,79 +1,107 @@
-var navs = [{
-	"title": "基本元素",
-	"icon": "fa-cubes",
-	"spread": true,
-	"children": [{
-		"title": "按钮",
-		"icon": "&#xe641;",
-		"href": "button.html"
-	}, {
-		"title": "表单",
-		"icon": "&#xe63c;",
-		"href": "form.html"
-	}, {
-		"title": "表格",
-		"icon": "&#xe63c;",
-		"href": "table.html"
-	}, {
-		"title": "导航",
-		"icon": "&#xe609;",
-		"href": "nav.html"
-	}, {
-		"title": "Tab选项卡",
-		"icon": "&#xe62a;",
-		"href": "tab.html"
-	}, {
-		"title": "辅助性元素",
-		"icon": "&#xe60c;",
-		"href": "auxiliar.html"
-	}]
-}, {
-	"title": "组件",
-	"icon": "fa-cogs",
-	"spread": false,
-	"children": [{
-		"title": "Datatable",
-		"icon": "fa-table",
-		"href": "begtable.html"
-	}, {
-		"title": "Navbar组件",
-		"icon": "fa-navicon",
-		"href": "navbar.html"
-	}]
-}, {
-	"title": "第三方组件",
-	"icon": "&#x1002;",
-	"spread": false,
-	"children": [{
-		"title": "iCheck组件",
-		"icon": "fa-check-square-o",
-		"href": "icheck.html"
-	}]
-}, {
-	"title": "地址本",
-	"icon": "fa-address-book",
-	"href": "",
-	"spread": false,
-	"children": [{
-		"title": "Github",
-		"icon": "fa-github",
-		"href": "https://www.github.com/"
-	}, {
-		"title": "QQ",
-		"icon": "fa-qq",
-		"href": "http://www.qq.com/"
-	}, {
-		"title": "Fly社区",
-		"icon": "&#xe609;",
-		"href": "http://fly.layui.com/"
-	}, {
-		"title": "新浪微博",
-		"icon": "fa-weibo",
-		"href": "http://weibo.com/"
-	}]
-}, {
-	"title": "这是一级导航",
-	"icon": "fa-stop-circle",
-	"href": "https://www.baidu.com",
-	"spread": false
-}];
+/**
+ * 功能列表
+ */
+var navs = 
+[
+    {
+        "title": "监控中心",
+//      "icon": "fa-cubes",
+        "spread": true,
+        "children": [
+            {
+                "title": "地图监控",
+//              "icon": "&#xe62b;",
+                "href": "mapMonitoring.html"
+            },
+            {
+                "title": "轨迹回放",
+//              "icon": "&#xe63c;",
+                "href": "replayingOrbit.html"
+            },
+            {
+                "title": "电子围栏",
+//              "icon": "&#xe63c;",
+                "href": "electronicFence.html"
+            }
+        ]
+    },
+    {
+        "title": "报警设置",
+//      "icon": "fa-cogs",
+        "spread": false,
+        "children": [
+            {
+                "title": "电子围栏报警设置",
+//              "icon": "fa-table",
+                "href": "electronicFenceAlarm.html"
+            },
+            {
+                "title": "基础报警设置",
+//              "icon": "fa-navicon",
+                "href": "baseAlarm.html"
+            },
+             {
+                "title": "报警统计",
+//              "icon": "fa-navicon",
+                "href": "alarmStatistics.html"
+            }
+        ]
+    },
+    {
+        "title": "报表中心",
+//      "icon": "&#x1002;",
+        "spread": false,
+        "children": [
+            {
+                "title": "行驶统计",
+//              "icon": "fa-check-square-o",
+                "href": "drivingStatistics.html"
+            },
+            {
+                "title": "停车报表",
+//              "icon": "fa-table",
+                "href": "stopReport.html"
+            },
+            {
+                "title": "故障报表",
+//              "icon": "fa-navicon",
+                "href": "troubleReport.html"
+            },
+             {
+                "title": "车身数据报表",
+//              "icon": "fa-navicon",
+                "href": "carReport.html"
+            }
+        ]
+    },
+    {
+        "title": "系统设置",
+//      "icon": "&#x1002;",
+        "spread": false,
+        "children": [
+            {
+                "title": "部门管理",
+//              "icon": "fa-github",
+                "href": "departmentManager.html"
+            },
+            {
+                "title": "子账号管理",
+//              "icon": "fa-qq",
+                "href": "userManager.html"
+            },
+            {
+                "title": "车辆管理",
+//              "icon": "&#xe609;",
+                "href": "carManager.html"
+            }
+        ]
+    },
+//  {
+//      "title": "这是一级导航",
+//      "icon": "fa-stop-circle",
+//      "href": "https://www.baidu.com",
+//      "spread": false
+//  }
+]
+
+;
