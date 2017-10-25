@@ -3,9 +3,12 @@
 
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>starui</title>
+		<link rel="stylesheet" type="text/css" href="js/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="assets/multiple/multiple-select.css" />
+
 	</head>
 
 	<body>
@@ -41,7 +44,11 @@
 				</div>
 				<!--下拉选单 end-->
 			</div>
-
+			<!--
+            	作者：yzbbanban@live.com
+            	时间：2017-10-25
+            	描述：带输入框 start
+            -->
 			<div style="border-top:1px solid #DEDEDE;margin-top: 20px;">
 				<div class="btn-group" style="margin-top: 20px;">
 					<input id="demoNum" style="width:100px" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="6"></input>
@@ -65,8 +72,37 @@
 				</div>
 
 			</div>
-			
-			
+			<!--带输入框 end-->
+			<!--时间选择 start-->
+			<div style="border-top:1px solid #DEDEDE;margin-top: 20px;">
+				<div class="form-group" style="margin-top: 20px;">
+					<input type="text" class="form-control" placeholder="开始时间" id="startTime">
+				</div>
+			</div>
+			<!--时间选择 end-->
+			<!--带图标的按钮start -->
+			<div style="border-top:1px solid #DEDEDE;margin-top: 20px;">
+				<div class="form-group" style="margin-top: 20px;">
+					<a href="http://v3.bootcss.com/components/">
+						bootstrap Glyphicons 字体图标
+					</a>
+					<button type="button" class="btn btn-default">
+  						<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+					</button>
+				</div>
+				<!--按钮组 start-->
+				<div class="btn-group" role="group" aria-label="...">
+					<button type="button" class="btn btn-default">Left</button>
+					<button type="button" class="btn btn-default">Middle</button>
+					<button type="button" class="btn btn-default">Right</button>
+				</div>
+				<!--按钮组 end-->
+			</div>
+			<!--带图标的按钮end-->
+
+			<div style="border-top:1px solid #DEDEDE;margin-top: 20px;">
+			</div>
+
 		</div>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
@@ -82,6 +118,7 @@
 			});
 		</script>
 		<!--下拉选单 end-->
+		<!--带输入框的下拉选单 start -->
 		<script type="text/javascript">
 			$(function() {
 				$("li").click(
@@ -90,7 +127,18 @@
 					});
 			});
 		</script>
-
+		<!--带输入框的下拉选单 end -->
+		<!--时间选择 start -->
+		<script src="js/lay/modules/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//执行一个laydate实例
+			laydate.render({
+				elem: '#startTime' //指定元素
+					,
+				type: 'datetime' //时间选择
+			});
+		</script>
+		<!--时间选择 end -->
 	</body>
 
 </html>
