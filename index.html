@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<title>starui</title>
-		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/multiple/multiple-select.css" />
 	</head>
+
 	<body>
-		
+		<div class="container">
+			<div class="form-group">
+				<label>Email address</label>
+				<input type="email" class="form-control" placeholder="Enter email">
+			</div>
+
+			<div class="form-group">
+				<label>Month</label>
+				<select id="ms" multiple="multiple">
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/multiple/multiple-select.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+				$('#ms').change(function() {
+					console.log($(this).val());
+				}).multipleSelect({
+					width: '100%'
+				});
+			});
+		</script>
 	</body>
+
 </html>
