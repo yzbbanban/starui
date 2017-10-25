@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="js/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="assets/multiple/multiple-select.css" />
+		<link rel="stylesheet" href="assets/checkbix/checkbix.min.css">
 
 	</head>
 
@@ -100,7 +101,19 @@
 			</div>
 			<!--带图标的按钮end-->
 
+			<!--自定义checkbox start-->
 			<div style="border-top:1px solid #DEDEDE;margin-top: 20px;">
+				<div class="form-group" style="margin-top: 20px;">
+					<input id="mycheckbox" type="checkbox" class="checkbix" data-color="blue" data-text="Blue" checked>
+					<input id="mycheckbox2" type="checkbox" class="checkbix" data-color="blue" data-text="Large, checked" data-size="large" checked>
+					<input id="mycheckbox8" type="checkbox" class="checkbix" data-shape="circled" data-color="orange" data-text="Orange, circled" checked>
+					<input id="mycheckbox6" type="checkbox" class="checkbix" data-shape="circled" data-size="large" data-color="red" data-text="Red, large" checked>
+				</div>
+			</div>
+			<!--自定义checkbox end-->
+			
+			<div style="border-top:1px solid #DEDEDE;margin-top: 20px;">
+				
 			</div>
 
 		</div>
@@ -139,6 +152,13 @@
 			});
 		</script>
 		<!--时间选择 end -->
+
+		<!--自定义checkbox start-->
+		<script src="assets/checkbix/checkbix.min.js"></script>
+		<script>
+			Checkbix.init();
+		</script>
+		<!--自定义checkbox start-->
 	</body>
 
 </html>
